@@ -10,6 +10,13 @@
     padding-right: 15px;
 }
 
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
 /* Carousel */
 .carousel-caption p {
     font-size: 20px;
@@ -21,15 +28,59 @@
     width: 100%;
 }
 
-/* QR code generator */
-#qrCode {
-    margin: 15px;
-}
-
 /* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
     /* Hide captions */
     .carousel-caption {
         display: none;
     }
+}
+
+.left.carousel-control,
+.right.carousel-control {
+    background-image: none;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.navbar-brand {
+    background: url('../images/logo.png');
+    width: 215px;
+    height: 55px;
+}
+
+.navbar-inverse {
+    background-color: #f8965d;
+    border-color: white;
+}
+
+.row-center {
+    display: flex;
+    align-items: center;
+}
+
+.img-produto-carrossel {
+    width: 100%;
+}
+
+.img-produto-carrinho {
+    height: 120px;
+    filter: drop-shadow(2px 2px 2px #ccc);
+}
+
+.linha-produto {
+    margin: 20px;
+}
+
+.produto-nome {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.produto-footer {
+    max-height: 140px;
+}
+
+.produto-nome {
 }
