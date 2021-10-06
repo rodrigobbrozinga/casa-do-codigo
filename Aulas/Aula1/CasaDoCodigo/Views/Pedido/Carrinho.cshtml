@@ -1,4 +1,6 @@
-﻿<h3>Meu Carrinho</h3>
+﻿@{ ViewData["Tittle"] = "Carrinho"; }
+
+<h3>Meu Carrinho</h3>
 
 <div class="panel panel-default">
     <div class="panel-heading">
@@ -126,10 +128,10 @@
 <div class="row">
     <div class="col-md-12">
         <div class="pull-right">
-            <a class="btn btn-success" href="/">
+            <a class="btn btn-success" asp-action="carrossel">
                 Adicionar Produtos
             </a>
-            <a class="btn btn-success" href="/">
+            <a class="btn btn-success" asp-action="cadastro">
                 Preencher Cadastro
             </a>
         </div>
